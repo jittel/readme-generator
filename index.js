@@ -51,7 +51,7 @@ inquirer
     }
 ])
 .then((response) => {
-    console.log(response.tests)
+    console.log(response)
 
     let readme = `# ${response.name}\n` +
                  `## description\n${response.description}\n` +
@@ -59,7 +59,7 @@ inquirer
                  `## usage info\n${response.usage}\n` +
                  `## constribution guidelines\n${response.contribution}\n` +
                  `## test instructions\n${response.tests}\n` +
-                 `## questions\n${response.github}\n${response.email}`
+                 `## questions\n* [github](${response.github})\n* ${response.email}`
 
     // do this after input data has been formatted
     fs.writeFile('README.md', readme, 'utf8', (err) => {

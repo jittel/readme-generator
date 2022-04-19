@@ -1,14 +1,14 @@
-# a
+# project one
 ## description
-a
+this is a description
 ## installation instructions
-a
+npm i
 ## usage info
-a
+don't use it lol
 ## constribution guidelines
-a
+just add things
 ## test instructions
-test
+don't do this either!
 ## questions
-a
-a
+* [github](https://github.com/jittel)
+* email@email.com
