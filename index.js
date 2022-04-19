@@ -31,7 +31,7 @@ inquirer
     {
         type: 'input',
         message: 'test instructions',
-        name: 'test'
+        name: 'tests'
     },
     {
         type: 'list',
@@ -51,16 +51,15 @@ inquirer
     }
 ])
 .then((response) => {
-    console.log(response)
-    resObj = JSON.stringify(response, null, 2)
+    console.log(response.tests)
 
     let readme = `# ${response.name}\n` +
                  `## description\n${response.description}\n` +
                  `## installation instructions\n${response.installation}\n` +
                  `## usage info\n${response.usage}\n` +
                  `## constribution guidelines\n${response.contribution}\n` +
-                 `## test instructions\n${response.test}`
-                 `## questions\n${response.test}\n${response.email}`
+                 `## test instructions\n${response.tests}\n` +
+                 `## questions\n${response.github}\n${response.email}`
 
     // do this after input data has been formatted
     fs.writeFile('README.md', readme, 'utf8', (err) => {
