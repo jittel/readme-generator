@@ -1,11 +1,11 @@
-{
-  "name": "a",
-  "description": "a",
-  "installation": "a",
-  "usage": "a",
-  "contribution": "a",
-  "test": "a",
-  "license": "L1",
-  "github": "a",
-  "email": "a"
-}
+# aaaaa
+## description
+sssss
+## installation instructions
+ddddd
+## usage info
+fffff
+## constribution guidelines
+ggggg
+## test instructions
+hhhh
